@@ -1,22 +1,10 @@
-# Define the Player class
-class Player:
-    def play(self):
-        print("The player is playing cricket.")
-
-# Define the Batsman class, derived from Player
-class Batsman(Player):
-    def play(self):
-        print("The batsman is batting.")
-
-# Define the Bowler class, derived from Player
-class Bowler(Player):
-    def play(self):
-        print("The bowler is bowling.")
-
-# Create objects of Batsman and Bowler classes
-batsman = Batsman()
-bowler = Bowler()
-
-# Call the play() method for each object
-batsman.play()
-bowler.play()
+num = 7
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
